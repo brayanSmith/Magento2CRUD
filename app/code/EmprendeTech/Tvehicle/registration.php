@@ -1,8 +1,9 @@
 <?php
+/**
+ * Copyright ©  All rights reserved.
+ * See COPYING.txt for license details.
+ */
+use Magento\Framework\Component\ComponentRegistrar;
 
-namespace EmprendeTech\Tvehicle;
+ComponentRegistrar::register(ComponentRegistrar::MODULE, 'Emprendetech_Tvehicle', __DIR__);
 
-class registration
-{
-
-}

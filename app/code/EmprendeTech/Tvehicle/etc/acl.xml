@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Emprendetech_Tvehicle::Type" title="Type" sortOrder="10">
+                    <resource id="Emprendetech_Tvehicle::Type_save" title="Save Type" sortOrder="10"/>
+                    <resource id="Emprendetech_Tvehicle::Type_delete" title="Delete Type" sortOrder="20"/>
+                    <resource id="Emprendetech_Tvehicle::Type_update" title="Update Type" sortOrder="30"/>
+                    <resource id="Emprendetech_Tvehicle::Type_view" title="View Type" sortOrder="40"/>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

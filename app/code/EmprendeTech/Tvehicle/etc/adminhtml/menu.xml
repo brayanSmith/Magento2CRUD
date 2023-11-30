@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Emprendetech_Tvehicle::emprendetech_tvehicle_type"
+             title="Type Vehicle"
+             translate="title"
+             module="Emprendetech_Tvehicle"
+             sortOrder="99998"
+             resource="Magento_Backend::content"
+             parent="Magento_Backend::content_elements"
+             action="emprendetech_tvehicle/type/index"/>
+    </menu>
+</config>

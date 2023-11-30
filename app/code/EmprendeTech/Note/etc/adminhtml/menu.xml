@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Emprendetech_Note::emprendetech_note_post"
+             title="Notes"
+             translate="title"
+             module="Emprendetech_Note"
+             sortOrder="10000"
+             resource="Magento_Backend::content"
+             parent="Magento_Backend::content_elements"
+             action="emprendetech_note/post/index"/>
+    </menu>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="EmprendeTech\Note\Api\PostRepositoryInterface" type="EmprendeTech\Note\Model\PostRepository"/>
+    <preference for="EmprendeTech\Note\Api\Data\PostInterface" type="EmprendeTech\Note\Model\Post"/>
+    <preference for="EmprendeTech\Note\Api\Data\PostSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
+    <virtualType name="EmprendeTech\Note\Model\ResourceModel\Post\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">emprendetech_note_post</argument>
+            <argument name="resourceModel" xsi:type="string">EmprendeTech\Note\Model\ResourceModel\Post\Collection</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="emprendetech_note_post_listing_data_source" xsi:type="string">EmprendeTech\Note\Model\ResourceModel\Post\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

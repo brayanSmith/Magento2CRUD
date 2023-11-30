@@ -7,7 +7,7 @@ declare(strict_types=1);
 
 namespace EmprendeTech\Tvehicle\Api\Data;
 
-interface TypeSearchResultInterface extends \Magento\Framework\Api\SearchResultsInterface
+interface TypeSearchResultsInterface extends \Magento\Framework\Api\SearchResultsInterface
 {
 
     /**

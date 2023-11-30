@@ -1,8 +1,31 @@
 <?php
+/**
+ * Copyright ©  All rights reserved.
+ * See COPYING.txt for license details.
+ */
+declare(strict_types=1);
 
 namespace EmprendeTech\Note\Model\ResourceModel\Post;
 
-class Collection
+use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
+
+class Collection extends AbstractCollection
 {
 
+    /**
+     * @inheritDoc
+     */
+    protected $_idFieldName = 'post_id';
+
+    /**
+     * @inheritDoc
+     */
+    protected function _construct()
+    {
+        $this->_init(
+            \EmprendeTech\Note\Model\Post::class,
+            \EmprendeTech\Note\Model\ResourceModel\Post::class
+        );
+    }
 }
+
